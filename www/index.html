@@ -231,7 +231,10 @@
     }
 
     function btnEClick(e){
-        
+        if(!active && stop > 0){
+            startTime = new Date() - pauseTime * 1000;
+            active = true;
+        }
     }
     
  
