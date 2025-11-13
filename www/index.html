@@ -222,7 +222,12 @@
     }
 
     function btnDClick(e){
-
+        font = !font;
+        if(font) {
+            $("body").css("font-family", "Comic Sans MS");
+        } else {
+            $("body").css("font-family", "Arial");
+        } 
     }
 
     function btnEClick(e){
